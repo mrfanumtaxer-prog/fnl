@@ -79,7 +79,7 @@ export const HeroCarousel: React.FC = () => {
   return (
     <div className="relative w-full bg-white overflow-hidden">
       <div className="relative w-full">
-        <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px]">
+        <div className="relative w-full h-[280px] sm:h-[350px] md:h-[420px] lg:h-[480px]">
           <button
             onClick={goToPrevious}
             className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-20 flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-black/30 hover:bg-black/50 transition-all text-white backdrop-blur-sm"

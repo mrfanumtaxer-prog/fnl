@@ -12,9 +12,9 @@ export const HomePage: React.FC = () => {
     <div>
       <HeroCarousel />
 
-      <section className="py-12 sm:py-16 lg:py-20 bg-neutral-50">
+      <section className="py-8 sm:py-12 lg:py-16 bg-neutral-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900 mb-4">
               Find Your Perfect Plan
             </h2>
@@ -26,23 +26,23 @@ export const HomePage: React.FC = () => {
         </div>
       </section>
 
-      <section id="plans" className="py-12 sm:py-16 lg:py-20 bg-white">
+      <section id="plans" className="py-8 sm:py-12 lg:py-16 bg-white">
         <InternetPlans />
       </section>
 
-      <section id="streaming" className="py-12 sm:py-16 lg:py-20 bg-neutral-50">
+      <section id="streaming" className="py-8 sm:py-12 lg:py-16 bg-neutral-50">
         <StreamingPackage />
       </section>
 
-      <section id="bundle" className="py-12 sm:py-16 lg:py-20 bg-white">
+      <section id="bundle" className="py-8 sm:py-12 lg:py-16 bg-white">
         <BundleBuilder />
       </section>
 
-      <section id="trial" className="py-12 sm:py-16 lg:py-20 bg-neutral-50">
+      <section id="trial" className="py-8 sm:py-12 lg:py-16 bg-neutral-50">
         <TrialSignup />
       </section>
 
-      <section id="faq" className="py-12 sm:py-16 lg:py-20 bg-white">
+      <section id="faq" className="py-8 sm:py-12 lg:py-16 bg-white">
         <FAQ />
       </section>
     </div>
