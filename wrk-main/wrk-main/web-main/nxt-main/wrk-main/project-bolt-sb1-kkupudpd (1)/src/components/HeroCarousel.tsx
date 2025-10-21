@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import blackFridayImg from '../assets/carousel-images/1000031937.png';
+import blackFridayImg from '../assets/carousel-images/1000032000.png';
 import package1Img from '../assets/carousel-images/1000031934.png';
 import streamingImg from '../assets/carousel-images/1000031935.png';
 import socialImg from '../assets/carousel-images/1000031936.png';
@@ -74,12 +74,23 @@ export const HeroCarousel: React.FC = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
   };
 
+  const handleSlideClick = (link: string) => {
+    if (link === '/internet') {
+      const element = document.getElementById('plans');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      navigate(link);
+    }
+  };
+
   const slide = slides[currentSlide];
 
   return (
     <div className="relative w-full bg-white overflow-hidden">
       <div className="relative w-full">
-        <div className="relative w-full h-[280px] sm:h-[350px] md:h-[420px] lg:h-[480px]">
+        <div className="relative w-full h-[200px] sm:h-[250px] md:h-[300px] lg:h-[350px]">
           <button
             onClick={goToPrevious}
             className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-20 flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-black/30 hover:bg-black/50 transition-all text-white backdrop-blur-sm"
@@ -108,7 +119,7 @@ export const HeroCarousel: React.FC = () => {
                     {slide.subtitle}
                   </p>
                   <button
-                    onClick={() => navigate(slide.link)}
+                    onClick={() => handleSlideClick(slide.link)}
                     className="px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-primary-600 to-secondary-600 text-white font-semibold rounded-button shadow-glow-primary hover:shadow-glow-secondary hover:scale-105 transition-all duration-300 animate-[slideInLeft_0.8s_ease-out_0.2s_both]"
                   >
                     {slide.cta}

@@ -28,22 +28,22 @@ export const StreamingPackage: React.FC = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-br from-secondary-50 to-primary-50 py-16 sm:py-20">
+    <div className="bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-700 py-16 sm:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-primary-600 to-secondary-600 rounded-full mb-6">
-            <Tv className="w-10 h-10 text-white" />
+          <div className="inline-flex items-center justify-center w-24 h-24 bg-gradient-to-br from-yellow-400 to-red-500 rounded-full mb-6 shadow-2xl">
+            <Tv className="w-12 h-12 text-white" />
           </div>
-          <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4 drop-shadow-lg">
             Premium IPTV Streaming
           </h2>
-          <p className="text-lg text-neutral-600">
+          <p className="text-lg text-white/90 drop-shadow">
             Access thousands of channels and endless entertainment
           </p>
         </div>
 
         <div className="max-w-3xl mx-auto">
-          <Card className="bg-white transition-all duration-300 hover:shadow-glow-secondary">
+          <Card className="bg-white transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
             <div className="grid md:grid-cols-2 gap-8">
               <div>
                 <div className="mb-6">

@@ -89,21 +89,21 @@ export const BestPlanFinder: React.FC = () => {
   }, [selectedUsers, selectedUsage]);
 
   return (
-    <div className="bg-neutral-50 py-16 sm:py-20">
+    <div className="bg-gradient-to-br from-orange-500 via-pink-500 to-purple-600 py-16 sm:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4 drop-shadow-lg">
             Find Your Perfect Plan
           </h2>
-          <p className="text-lg text-neutral-600">
+          <p className="text-lg text-white/90 drop-shadow">
             Tell us about your needs and we'll recommend the best option
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          <Card className="flex flex-col items-center text-center">
-            <div className="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mb-4">
-              <Users className="w-8 h-8 text-secondary-600" />
+          <Card className="flex flex-col items-center text-center hover:scale-105 transition-transform duration-300">
+            <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-full flex items-center justify-center mb-4 shadow-lg">
+              <Users className="w-10 h-10 text-white" />
             </div>
             <h3 className="text-xl font-semibold mb-4 text-neutral-900">How many users?</h3>
             <Dropdown
@@ -115,9 +115,9 @@ export const BestPlanFinder: React.FC = () => {
             />
           </Card>
 
-          <Card className="flex flex-col items-center text-center">
-            <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mb-4">
-              <Wifi className="w-8 h-8 text-primary-600" />
+          <Card className="flex flex-col items-center text-center hover:scale-105 transition-transform duration-300">
+            <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-emerald-400 rounded-full flex items-center justify-center mb-4 shadow-lg">
+              <Wifi className="w-10 h-10 text-white" />
             </div>
             <h3 className="text-xl font-semibold mb-4 text-neutral-900">What will you use it for?</h3>
             <Dropdown
@@ -129,9 +129,9 @@ export const BestPlanFinder: React.FC = () => {
             />
           </Card>
 
-          <Card className={`flex flex-col items-center text-center transition-all ${recommendation ? 'bg-gradient-to-br from-primary-50 to-secondary-50 border-2 border-primary-200' : ''}`}>
-            <div className="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mb-4">
-              <CheckCircle className="w-8 h-8 text-white" />
+          <Card className={`flex flex-col items-center text-center transition-all hover:scale-105 duration-300 ${recommendation ? 'bg-gradient-to-br from-yellow-50 to-orange-50 border-2 border-yellow-400 shadow-xl' : ''}`}>
+            <div className="w-20 h-20 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-full flex items-center justify-center mb-4 shadow-lg">
+              <CheckCircle className="w-10 h-10 text-white" />
             </div>
             <h3 className="text-xl font-semibold mb-4 text-neutral-900">Recommended Plan</h3>
 

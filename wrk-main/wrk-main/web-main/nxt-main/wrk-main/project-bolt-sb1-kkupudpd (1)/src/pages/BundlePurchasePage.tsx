@@ -17,10 +17,10 @@ interface BundleDetails {
 const defaultBundle: BundleDetails = {
   internet: 'Lightning 1GB',
   streaming: true,
-  internetPrice: 99,
-  streamingPrice: 79,
-  total: 160,
-  savings: 18,
+  internetPrice: 200,
+  streamingPrice: 500,
+  total: 630,
+  savings: 70,
 };
 
 export const BundlePurchasePage: React.FC = () => {

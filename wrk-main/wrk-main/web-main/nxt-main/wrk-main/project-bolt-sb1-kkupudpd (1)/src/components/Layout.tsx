@@ -41,10 +41,10 @@ export const Layout: React.FC = () => {
               <span className="text-xl font-bold">Cable Internet</span>
             </Link>
 
-            <nav className="hidden md:flex items-center gap-6">
+            <nav className="hidden md:flex items-center gap-4">
               <Link
                 to="/"
-                className="text-neutral-700 hover:text-primary-600 transition-colors"
+                className="px-5 py-2.5 text-neutral-700 hover:text-white hover:bg-primary-600 rounded-lg font-medium transition-all duration-200 hover:shadow-md"
                 onClick={(e) => {
                   if (location.pathname === '/') {
                     e.preventDefault();
@@ -56,19 +56,19 @@ export const Layout: React.FC = () => {
               </Link>
               <Link
                 to="/trial"
-                className="text-neutral-700 hover:text-primary-600 transition-colors"
+                className="px-5 py-2.5 text-neutral-700 hover:text-white hover:bg-primary-600 rounded-lg font-medium transition-all duration-200 hover:shadow-md"
               >
                 Free Trial
               </Link>
               <button
                 onClick={() => scrollToSection('plans')}
-                className="text-neutral-700 hover:text-primary-600 transition-colors cursor-pointer"
+                className="px-5 py-2.5 text-neutral-700 hover:text-white hover:bg-primary-600 rounded-lg font-medium transition-all duration-200 hover:shadow-md cursor-pointer"
               >
                 Plans
               </button>
               <button
                 onClick={() => scrollToSection('bundle')}
-                className="text-neutral-700 hover:text-primary-600 transition-colors cursor-pointer"
+                className="px-5 py-2.5 text-neutral-700 hover:text-white hover:bg-primary-600 rounded-lg font-medium transition-all duration-200 hover:shadow-md cursor-pointer"
               >
                 Bundles
               </button>
